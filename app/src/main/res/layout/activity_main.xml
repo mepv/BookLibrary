@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon"
+        android:text="@string/my_library"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <Button
+        android:id="@+id/buttonAllBooks"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/see_all_books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <Button
+        android:id="@+id/buttonCurrentlyReading"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/currently_reading_books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAllBooks"
+        app:layout_constraintStart_toStartOf="@+id/buttonAllBooks"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAllBooks" />
+
+    <Button
+        android:id="@+id/buttonWantToRead"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/your_wish_list"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAlreadyRead"
+        app:layout_constraintStart_toStartOf="@+id/buttonAlreadyRead"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAlreadyRead" />
+
+    <Button
+        android:id="@+id/buttonFavorite"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/see_your_favorites"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWantToRead"
+        app:layout_constraintStart_toStartOf="@+id/buttonWantToRead"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWantToRead" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/about"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFavorite"
+        app:layout_constraintStart_toStartOf="@+id/buttonFavorite"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFavorite" />
+
+    <Button
+        android:id="@+id/buttonAlreadyRead"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/already_read_books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCurrentlyReading"
+        app:layout_constraintStart_toStartOf="@+id/buttonCurrentlyReading"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCurrentlyReading" />
+
+    <TextView
+        android:id="@+id/textLicence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/develop_by"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/logo"
+        android:src="@mipmap/mepv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
